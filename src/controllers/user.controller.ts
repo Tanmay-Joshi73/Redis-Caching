@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, response, Response } from "express";
 import * as service from "../services/user.services.js";
 
 export const createUser = async (
@@ -60,3 +60,4 @@ export const deleteUser = async (
         message: "User deleted successfully"
     });
 };
+
