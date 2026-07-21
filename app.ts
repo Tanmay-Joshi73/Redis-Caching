@@ -11,7 +11,7 @@ client.collectDefaultMetrics({
 const app = express();
 
 app.use(express.json());
-app.get('/metrices',async(req:Request,res:Response,next:NextFunction)=>{
+app.get('/metrics',async(req:Request,res:Response,next:NextFunction)=>{
  res.setHeader("Content-type", register.contentType);
   res.send(await register.metrics());
   next();
